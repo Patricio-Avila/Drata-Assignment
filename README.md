@@ -1,20 +1,25 @@
 # Drata-Assignment
 Drata test
 
+--------------Instalation-----------------
+
 You will need to have Node.js and NPM installed on your machine. 
 If you want to have WebdriverIO integrated into your test suite, then install it locally with:
 
 $ npm instal @wdio/cli  
 
-
 after Webdriverio instalation you can setup with the wizzard. 
 If you're in the root directory of an existing project, run:
+
+--------------Init project----------------
 
 npm init wdio .
 
 or if you want to create a new project:
 
 npm init wdio ./path/to/new/project
+
+--------------Wizard Setup----------------
 
 ? Where is your automation backend located? 
 
@@ -52,9 +57,11 @@ npm init wdio ./path/to/new/project
 
 -''
 
-Once the wizard end, please go to the wdio.conf.js file and searh fo the baseUrl variable and set it as: baseUrl: '',
+----------Run project instructions--------
 
-at this point you shall see the folowing docs:
+1.  Once the wizard end, please go to the wdio.conf.js file and searh fo the baseUrl variable and set it as: baseUrl: '',
+
+2.  at this point you shall see the folowing docs:
 
 node_modules(Folder)
 
@@ -66,11 +73,11 @@ package-lock.json
 
 wdio.config.js
 
-Next you shall need to install chai with
+3.  Next you shall need to install chai with
 
 npm install chai 
 
-now you can run on console the comand:
+4.  now you can run on console the comand:
 
 npm run wdio
 
@@ -80,7 +87,7 @@ npx run wdio
 
 thats it!
 
-Possible Problems:
+------------Possible Problems-----------
 
 most of the cases the issues come from the Folders where the wdioConfig files has being created and where we are running the npm run, please be sure to run the test inside the folder you donwload and install the Webdriver
 
