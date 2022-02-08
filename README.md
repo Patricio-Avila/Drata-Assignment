@@ -22,7 +22,7 @@ npm init wdio ./path/to/new/project
 -mocha
 ? Do you want to use a compiler? 
 -No!
-? Where are your test specs located? 
+? Where are your test specs located? -- be sure to run it inside the folder where you donwload the project 
 -./test/specs/**/*.js
 ? Do you want WebdriverIO to autogenerate some test files? 
 -No
@@ -35,11 +35,20 @@ npm init wdio ./path/to/new/project
 ? What is the base url? 
 -''
 
-You shall need to install chai with
+Once the wizard end, please go to the wdio.conf.js file and searh fo the baseUrl variable and set it as: baseUrl: '',
+at this point you shall see the folowing docs:
+
+node_modules(Folder)
+test(Folder)
+package.json
+package-lock.json
+wdio.config.js
+
+Next you shall need to install chai with
 
 npm install chai 
 
-Once the wizard end, you can run on console the comand:
+now you can run on console the comand:
 
 npm run wdio
 or
